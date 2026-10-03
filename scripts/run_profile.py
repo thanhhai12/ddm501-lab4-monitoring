@@ -22,6 +22,18 @@ def main():
     parser.add_argument('--seed', type=int, default=501)
     args = parser.parse_args()
     name = args.profile if args.strength == 1 else f'{args.profile}-{args.strength}'
+    if args.requests < 1 or not 0 <= args.strength <= 1:
+        parser.error('requests must be positive and strength must be in [0,1]')
+    for attempt in range(30):
+        try:
+            with urllib.request.urlopen('http://localhost:8000/health', timeout=2) as response:
+                if json.load(response)['model_loaded']:
+                    break
+        except OSError:
+            pass
+        time.sleep(1)
+    else:
+        raise RuntimeError('API did not become ready within 30 attempts')
     rng = random.Random(args.seed)
     sample = load_raw().sample(n=args.requests, replace=True, random_state=args.seed)
     report = {'profile': args.profile, 'strength': args.strength, 'seed': args.seed,
@@ -43,7 +55,7 @@ def main():
         if i % 50 == 0:
             with urllib.request.urlopen('http://localhost:8000/monitoring') as response:
                 state = json.load(response)
-            report['checkpoints'].append({'requests': i, 'elapsed_seconds': time.time(),
+            report['checkpoints'].append({'requests': i, 'timestamp_seconds': time.time(),
                 'mean_score': sum(scores)/len(scores), 'decisions': dict(decisions), **state})
             print(i, state['drift_score'], state['fairness_gap'], flush=True)
         time.sleep(0.15)

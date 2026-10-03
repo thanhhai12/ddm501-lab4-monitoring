@@ -1,16 +1,16 @@
 {
-  "profile": "normal",
+  "profile": "unfair",
   "strength": 1.0,
   "seed": 501,
-  "started_at": "2026-10-03T06:59:36.623998+00:00",
+  "started_at": "2026-10-03T07:06:29.041651+00:00",
   "checkpoints": [
     {
       "requests": 50,
-      "mean_score": 0.2480100000000001,
+      "mean_score": 0.42624800000000007,
       "decisions": {
-        "REVIEW": 9,
-        "APPROVE": 38,
-        "DECLINE": 3
+        "REVIEW": 8,
+        "APPROVE": 24,
+        "DECLINE": 18
       },
       "window_size": 50,
       "min_window_size": 200,
@@ -20,15 +20,15 @@
       "drift_status": "stable",
       "selection_rate": {},
       "fairness_gap": 0.0,
-      "timestamp_seconds": 1791010785.386925
+      "timestamp_seconds": 1791011197.7897909
     },
     {
       "requests": 100,
-      "mean_score": 0.2335240000000001,
+      "mean_score": 0.4124690000000002,
       "decisions": {
-        "REVIEW": 19,
-        "APPROVE": 77,
-        "DECLINE": 4
+        "REVIEW": 14,
+        "APPROVE": 52,
+        "DECLINE": 34
       },
       "window_size": 100,
       "min_window_size": 200,
@@ -38,15 +38,15 @@
       "drift_status": "stable",
       "selection_rate": {},
       "fairness_gap": 0.0,
-      "timestamp_seconds": 1791010794.307464
+      "timestamp_seconds": 1791011206.856756
     },
     {
       "requests": 150,
-      "mean_score": 0.2236440000000001,
+      "mean_score": 0.37093533333333356,
       "decisions": {
-        "REVIEW": 24,
-        "APPROVE": 119,
-        "DECLINE": 7
+        "REVIEW": 21,
+        "APPROVE": 86,
+        "DECLINE": 43
       },
       "window_size": 150,
       "min_window_size": 200,
@@ -56,15 +56,15 @@
       "drift_status": "stable",
       "selection_rate": {},
       "fairness_gap": 0.0,
-      "timestamp_seconds": 1791010803.23436
+      "timestamp_seconds": 1791011215.684556
     },
     {
       "requests": 200,
-      "mean_score": 0.22023650000000003,
+      "mean_score": 0.3719785000000002,
       "decisions": {
         "REVIEW": 29,
-        "APPROVE": 162,
-        "DECLINE": 9
+        "APPROVE": 115,
+        "DECLINE": 56
       },
       "window_size": 200,
       "min_window_size": 200,
@@ -72,27 +72,27 @@
       "feature_psi": {
         "LIMIT_BAL": 0.023186486356309457,
         "AGE": 0.04183294504271705,
-        "PAY_0": 0.038998345292584016,
+        "PAY_0": 0.2045207028624802,
         "utilisation_ratio": 0.053974609191631134,
-        "payment_ratio": 0.027156422160695207,
-        "max_delay": 0.04786911969614421
+        "payment_ratio": 0.17282431776439375,
+        "max_delay": 0.28261809715629016
       },
-      "drift_score": 0.053974609191631134,
-      "drift_status": "stable",
+      "drift_score": 0.28261809715629016,
+      "drift_status": "significant",
       "selection_rate": {
-        "1.0": 0.2,
+        "1.0": 0.9230769230769231,
         "2.0": 0.18518518518518517
       },
-      "fairness_gap": 0.014814814814814836,
-      "timestamp_seconds": 1791010812.164255
+      "fairness_gap": 0.737891737891738,
+      "timestamp_seconds": 1791011224.736751
     },
     {
       "requests": 250,
-      "mean_score": 0.23246999999999998,
+      "mean_score": 0.3950044000000002,
       "decisions": {
-        "REVIEW": 34,
-        "APPROVE": 198,
-        "DECLINE": 18
+        "REVIEW": 33,
+        "APPROVE": 135,
+        "DECLINE": 82
       },
       "window_size": 250,
       "min_window_size": 200,
@@ -100,27 +100,27 @@
       "feature_psi": {
         "LIMIT_BAL": 0.023186205123203872,
         "AGE": 0.03363516163557722,
-        "PAY_0": 0.024598602062000492,
+        "PAY_0": 0.2641656340342248,
         "utilisation_ratio": 0.06000819582172217,
-        "payment_ratio": 0.020501703714915335,
-        "max_delay": 0.036845632913592184
+        "payment_ratio": 0.25082828791504996,
+        "max_delay": 0.37374889337302003
       },
-      "drift_score": 0.06000819582172217,
-      "drift_status": "stable",
+      "drift_score": 0.37374889337302003,
+      "drift_status": "significant",
       "selection_rate": {
-        "1.0": 0.2159090909090909,
+        "1.0": 0.9318181818181818,
         "2.0": 0.2037037037037037
       },
-      "fairness_gap": 0.01220538720538722,
-      "timestamp_seconds": 1791010821.06253
+      "fairness_gap": 0.728114478114478,
+      "timestamp_seconds": 1791011233.78645
     },
     {
       "requests": 300,
-      "mean_score": 0.2349506666666667,
+      "mean_score": 0.4000526666666669,
       "decisions": {
-        "REVIEW": 41,
-        "APPROVE": 235,
-        "DECLINE": 24
+        "REVIEW": 40,
+        "APPROVE": 159,
+        "DECLINE": 101
       },
       "window_size": 300,
       "min_window_size": 200,
@@ -128,27 +128,27 @@
       "feature_psi": {
         "LIMIT_BAL": 0.025514891650138486,
         "AGE": 0.031020186490667925,
-        "PAY_0": 0.010289892397507909,
+        "PAY_0": 0.2885627107200601,
         "utilisation_ratio": 0.04636212102142338,
-        "payment_ratio": 0.0316161417500211,
-        "max_delay": 0.021183882109242342
+        "payment_ratio": 0.2888908231467865,
+        "max_delay": 0.3598360179321258
       },
-      "drift_score": 0.04636212102142338,
-      "drift_status": "stable",
+      "drift_score": 0.3598360179321258,
+      "drift_status": "significant",
       "selection_rate": {
-        "1.0": 0.22641509433962265,
+        "1.0": 0.9433962264150944,
         "2.0": 0.211340206185567
       },
-      "fairness_gap": 0.015074888154055638,
-      "timestamp_seconds": 1791010829.998215
+      "fairness_gap": 0.7320560202295273,
+      "timestamp_seconds": 1791011242.670103
     },
     {
       "requests": 350,
-      "mean_score": 0.24115542857142852,
+      "mean_score": 0.3978934285714288,
       "decisions": {
         "REVIEW": 50,
-        "APPROVE": 269,
-        "DECLINE": 31
+        "APPROVE": 186,
+        "DECLINE": 114
       },
       "window_size": 350,
       "min_window_size": 200,
@@ -156,27 +156,27 @@
       "feature_psi": {
         "LIMIT_BAL": 0.019388404059082986,
         "AGE": 0.027715240379219797,
-        "PAY_0": 0.00959445453580878,
+        "PAY_0": 0.27442184366687,
         "utilisation_ratio": 0.03828975689225873,
-        "payment_ratio": 0.01874445493997533,
-        "max_delay": 0.008165285165181807
+        "payment_ratio": 0.27069582660837577,
+        "max_delay": 0.3405977193683683
       },
-      "drift_score": 0.03828975689225873,
-      "drift_status": "stable",
+      "drift_score": 0.3405977193683683,
+      "drift_status": "significant",
       "selection_rate": {
-        "1.0": 0.2661290322580645,
+        "1.0": 0.9354838709677419,
         "2.0": 0.21238938053097345
       },
-      "fairness_gap": 0.05373965172709105,
-      "timestamp_seconds": 1791010838.921203
+      "fairness_gap": 0.7230944904367684,
+      "timestamp_seconds": 1791011251.743881
     },
     {
       "requests": 400,
-      "mean_score": 0.23552475000000006,
+      "mean_score": 0.3966345000000001,
       "decisions": {
-        "REVIEW": 57,
-        "APPROVE": 311,
-        "DECLINE": 32
+        "REVIEW": 63,
+        "APPROVE": 209,
+        "DECLINE": 128
       },
       "window_size": 400,
       "min_window_size": 200,
@@ -184,30 +184,30 @@
       "feature_psi": {
         "LIMIT_BAL": 0.015204759253802734,
         "AGE": 0.0301326721486143,
-        "PAY_0": 0.0059094906450449305,
+        "PAY_0": 0.2791178533539824,
         "utilisation_ratio": 0.028813018718608936,
-        "payment_ratio": 0.013118220869583532,
-        "max_delay": 0.0035574038132665095
+        "payment_ratio": 0.2878810982215375,
+        "max_delay": 0.35256397182052246
       },
-      "drift_score": 0.0301326721486143,
-      "drift_status": "stable",
+      "drift_score": 0.35256397182052246,
+      "drift_status": "significant",
       "selection_rate": {
-        "1.0": 0.23448275862068965,
+        "1.0": 0.9379310344827586,
         "2.0": 0.21568627450980393
       },
-      "fairness_gap": 0.01879648411088572,
-      "timestamp_seconds": 1791010847.882443
+      "fairness_gap": 0.7222447599729547,
+      "timestamp_seconds": 1791011260.736211
     }
   ],
   "statuses": {
     "200": 400
   },
-  "mean_score": 0.23552475000000006,
+  "mean_score": 0.3966345000000001,
   "decisions": {
-    "REVIEW": 57,
-    "APPROVE": 311,
-    "DECLINE": 32
+    "REVIEW": 63,
+    "APPROVE": 209,
+    "DECLINE": 128
   },
-  "p95_ms": 27.37475000321865,
-  "finished_at": "2026-10-03T07:00:48.037687+00:00"
+  "p95_ms": 33.3126249970519,
+  "finished_at": "2026-10-03T07:07:40.891556+00:00"
 }

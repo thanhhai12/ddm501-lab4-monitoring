@@ -6,7 +6,6 @@
   "checkpoints": [
     {
       "requests": 50,
-      "elapsed_seconds": 1791010906.930466,
       "mean_score": 0.25589,
       "decisions": {
         "REVIEW": 9,
@@ -20,11 +19,11 @@
       "drift_score": 0.0,
       "drift_status": "stable",
       "selection_rate": {},
-      "fairness_gap": 0.0
+      "fairness_gap": 0.0,
+      "timestamp_seconds": 1791010906.930466
     },
     {
       "requests": 100,
-      "elapsed_seconds": 1791010916.1408908,
       "mean_score": 0.24095900000000003,
       "decisions": {
         "REVIEW": 18,
@@ -38,11 +37,11 @@
       "drift_score": 0.0,
       "drift_status": "stable",
       "selection_rate": {},
-      "fairness_gap": 0.0
+      "fairness_gap": 0.0,
+      "timestamp_seconds": 1791010916.1408908
     },
     {
       "requests": 150,
-      "elapsed_seconds": 1791010925.071549,
       "mean_score": 0.23115000000000005,
       "decisions": {
         "REVIEW": 24,
@@ -56,11 +55,11 @@
       "drift_score": 0.0,
       "drift_status": "stable",
       "selection_rate": {},
-      "fairness_gap": 0.0
+      "fairness_gap": 0.0,
+      "timestamp_seconds": 1791010925.071549
     },
     {
       "requests": 200,
-      "elapsed_seconds": 1791010933.937011,
       "mean_score": 0.22777899999999998,
       "decisions": {
         "REVIEW": 29,
@@ -84,11 +83,11 @@
         "1.0": 0.2,
         "2.0": 0.1925925925925926
       },
-      "fairness_gap": 0.007407407407407418
+      "fairness_gap": 0.007407407407407418,
+      "timestamp_seconds": 1791010933.937011
     },
     {
       "requests": 250,
-      "elapsed_seconds": 1791010942.8576,
       "mean_score": 0.24056559999999994,
       "decisions": {
         "REVIEW": 33,
@@ -112,11 +111,11 @@
         "1.0": 0.2159090909090909,
         "2.0": 0.20987654320987653
       },
-      "fairness_gap": 0.00603254769921438
+      "fairness_gap": 0.00603254769921438,
+      "timestamp_seconds": 1791010942.8576
     },
     {
       "requests": 300,
-      "elapsed_seconds": 1791010951.7718139,
       "mean_score": 0.24325200000000005,
       "decisions": {
         "REVIEW": 40,
@@ -140,11 +139,11 @@
         "1.0": 0.22641509433962265,
         "2.0": 0.21649484536082475
       },
-      "fairness_gap": 0.009920248978797896
+      "fairness_gap": 0.009920248978797896,
+      "timestamp_seconds": 1791010951.7718139
     },
     {
       "requests": 350,
-      "elapsed_seconds": 1791010961.095972,
       "mean_score": 0.24930114285714275,
       "decisions": {
         "REVIEW": 49,
@@ -168,11 +167,11 @@
         "1.0": 0.2661290322580645,
         "2.0": 0.2168141592920354
       },
-      "fairness_gap": 0.0493148729660291
+      "fairness_gap": 0.0493148729660291,
+      "timestamp_seconds": 1791010961.095972
     },
     {
       "requests": 400,
-      "elapsed_seconds": 1791010970.7246962,
       "mean_score": 0.2437479999999999,
       "decisions": {
         "REVIEW": 56,
@@ -196,7 +195,8 @@
         "1.0": 0.23448275862068965,
         "2.0": 0.2196078431372549
       },
-      "fairness_gap": 0.014874915483434753
+      "fairness_gap": 0.014874915483434753,
+      "timestamp_seconds": 1791010970.7246962
     }
   ],
   "statuses": {
