@@ -1,0 +1,5 @@
+NAME                   IMAGE                       COMMAND                  SERVICE         CREATED         STATUS                    PORTS
+ddm501-api             ddm501-lab04-api            "uvicorn app.main:ap…"   api             3 minutes ago   Up 55 seconds (healthy)   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+ddm501-grafana         grafana/grafana:10.4.2      "/run.sh"                grafana         3 minutes ago   Up 3 minutes              0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+ddm501-node-exporter   prom/node-exporter:v1.7.0   "/bin/node_exporter …"   node-exporter   3 minutes ago   Up 3 minutes              0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp
+ddm501-prometheus      prom/prometheus:v2.51.2     "/bin/prometheus --c…"   prometheus      3 minutes ago   Up 3 minutes              0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp

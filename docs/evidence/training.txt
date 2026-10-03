@@ -1,0 +1,40 @@
+==============================================================
+Credit Default Risk — model training
+==============================================================
+
+[1/5] Loading data/credit_default.csv ...
+      30,000 rows x 24 columns
+      Default rate: 23.3%
+
+[2/5] Splitting train / test (80 / 20, stratified) ...
+      train=24,000  test=6,000
+
+[3/5] Fitting the pipeline ...
+      done
+
+[4/5] Evaluating on the held-out test set ...
+      ROC AUC : 0.7473
+      PR  AUC : 0.5444   (baseline = 0.2328)
+
+      At threshold 0.3:
+        true negatives   4,065   false positives    538
+        false negatives    724   true positives     673
+
+              precision    recall  f1-score   support
+
+  no default       0.85      0.88      0.87      4603
+     default       0.56      0.48      0.52      1397
+
+    accuracy                           0.79      6000
+   macro avg       0.70      0.68      0.69      6000
+weighted avg       0.78      0.79      0.78      6000
+
+[5/5] Saving to models/credit_model.joblib ...
+      saved (240 KB)
+
+==============================================================
+Next steps
+==============================================================
+  1. Start the API : uvicorn app.main:app --reload
+  2. Open the docs : http://localhost:8000/docs
+  3. Score someone : POST /predict

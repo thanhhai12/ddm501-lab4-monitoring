@@ -1,0 +1,117 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.11.15, pytest-8.3.4, pluggy-1.6.0 -- /Users/thanhhigk/Study/devops/Lab-04/ddm501-lab4-starter/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/thanhhigk/Study/devops/Lab-04/ddm501-lab4-starter
+configfile: pytest.ini
+testpaths: tests
+plugins: cov-6.0.0, anyio-4.15.1
+collecting ... collected 79 items
+
+tests/test_api_monitoring.py::TestMonitoringEndpoint::test_monitoring_returns_the_expected_shape PASSED [  1%]
+tests/test_api_monitoring.py::TestMonitoringEndpoint::test_window_grows_with_traffic PASSED [  2%]
+tests/test_api_monitoring.py::TestMonitoringEndpoint::test_batch_requests_are_recorded_too PASSED [  3%]
+tests/test_api_monitoring.py::TestDerivedFeaturesReachTheMonitor::test_every_monitored_feature_reports_a_psi PASSED [  5%]
+tests/test_api_monitoring.py::TestDerivedFeaturesReachTheMonitor::test_derived_features_are_not_pinned_at_zero PASSED [  6%]
+tests/test_api_monitoring.py::TestDetection::test_drifted_traffic_raises_the_drift_score PASSED [  7%]
+tests/test_api_monitoring.py::TestDetection::test_biased_traffic_widens_the_selection_rate_gap PASSED [  8%]
+tests/test_api_monitoring.py::TestExplain::test_explanation_has_contributions PASSED [ 10%]
+tests/test_api_monitoring.py::TestExplain::test_contributions_are_ordered_by_magnitude PASSED [ 11%]
+tests/test_api_monitoring.py::TestExplain::test_contributions_are_in_the_applicants_own_units PASSED [ 12%]
+tests/test_api_monitoring.py::TestExplain::test_a_risky_applicant_gets_risk_increasing_factors PASSED [ 13%]
+tests/test_api_monitoring.py::TestExplain::test_explanation_agrees_with_the_prediction PASSED [ 15%]
+tests/test_api_monitoring.py::TestExplain::test_explain_is_measured_separately_from_predict PASSED [ 16%]
+tests/test_api_monitoring.py::TestModelInfo::test_model_info_reports_the_reference_state PASSED [ 17%]
+tests/test_config_files.py::TestPrometheusConfig::test_config_is_valid_yaml PASSED [ 18%]
+tests/test_config_files.py::TestPrometheusConfig::test_the_api_is_scraped PASSED [ 20%]
+tests/test_config_files.py::TestPrometheusConfig::test_scrape_target_matches_the_compose_service_name PASSED [ 21%]
+tests/test_config_files.py::TestPrometheusConfig::test_rule_files_exist_where_the_config_says PASSED [ 22%]
+tests/test_config_files.py::TestAlertRules::test_rule_files_are_valid_yaml PASSED [ 24%]
+tests/test_config_files.py::TestAlertRules::test_the_expected_ml_alerts_are_defined PASSED [ 25%]
+tests/test_config_files.py::TestAlertRules::test_every_alert_has_a_severity PASSED [ 26%]
+tests/test_config_files.py::TestAlertRules::test_every_alert_says_what_to_do PASSED [ 27%]
+tests/test_config_files.py::TestAlertRules::test_every_alert_waits_longer_than_one_scrape PASSED [ 29%]
+tests/test_config_files.py::TestAlertRules::test_drift_thresholds_are_the_conventional_bands PASSED [ 30%]
+tests/test_config_files.py::TestAlertRules::test_alerts_only_reference_metrics_the_service_exports PASSED [ 31%]
+tests/test_config_files.py::TestGrafana::test_datasource_is_provisioned PASSED [ 32%]
+tests/test_config_files.py::TestGrafana::test_datasource_url_matches_the_compose_service PASSED [ 34%]
+tests/test_config_files.py::TestGrafana::test_dashboards_are_valid_json PASSED [ 35%]
+tests/test_config_files.py::TestGrafana::test_dashboard_panels_all_have_a_datasource PASSED [ 36%]
+tests/test_config_files.py::TestGrafana::test_dashboard_panels_have_targets PASSED [ 37%]
+tests/test_config_files.py::TestGrafana::test_dashboards_have_unique_uids PASSED [ 39%]
+tests/test_config_files.py::TestCompose::test_compose_is_valid_yaml PASSED [ 40%]
+tests/test_config_files.py::TestCompose::test_the_stack_is_complete PASSED [ 41%]
+tests/test_config_files.py::TestCompose::test_everything_shares_one_network PASSED [ 43%]
+tests/test_config_files.py::TestCompose::test_the_model_is_mounted_read_only PASSED [ 44%]
+tests/test_config_files.py::TestCompose::test_the_image_runs_as_a_non_root_user PASSED [ 45%]
+tests/test_config_files.py::TestCompose::test_the_healthcheck_probes_the_health_endpoint PASSED [ 46%]
+tests/test_metrics.py::TestExposition::test_metrics_endpoint_returns_200 PASSED [ 48%]
+tests/test_metrics.py::TestExposition::test_content_type_is_the_prometheus_format PASSED [ 49%]
+tests/test_metrics.py::TestExposition::test_exposition_parses PASSED     [ 50%]
+tests/test_metrics.py::TestExposition::test_every_metric_has_a_help_string PASSED [ 51%]
+tests/test_metrics.py::TestNamingConventions::test_counters_are_declared_with_the_total_suffix PASSED [ 53%]
+tests/test_metrics.py::TestNamingConventions::test_durations_are_in_seconds PASSED [ 54%]
+tests/test_metrics.py::TestNamingConventions::test_latency_buckets_bracket_the_slo PASSED [ 55%]
+tests/test_metrics.py::TestMetricTypes::test_request_count_is_a_counter PASSED [ 56%]
+tests/test_metrics.py::TestMetricTypes::test_drift_score_is_a_gauge PASSED [ 58%]
+tests/test_metrics.py::TestMetricTypes::test_score_is_a_histogram PASSED [ 59%]
+tests/test_metrics.py::TestMetricTypes::test_score_buckets_cover_the_probability_range PASSED [ 60%]
+tests/test_metrics.py::TestRecording::test_prediction_increments_the_counter PASSED [ 62%]
+tests/test_metrics.py::TestRecording::test_batch_increments_by_the_batch_size PASSED [ 63%]
+tests/test_metrics.py::TestRecording::test_decision_counter_carries_the_decision_label PASSED [ 64%]
+tests/test_metrics.py::TestRecording::test_http_metrics_record_the_status PASSED [ 65%]
+tests/test_metrics.py::TestRecording::test_validation_failures_are_counted_too PASSED [ 67%]
+tests/test_metrics.py::TestRecording::test_model_loaded_gauge_is_one PASSED [ 68%]
+tests/test_metrics.py::TestRecording::test_model_info_is_exposed PASSED  [ 69%]
+tests/test_metrics.py::TestCardinality::test_endpoint_label_is_the_route_template PASSED [ 70%]
+tests/test_metrics.py::TestCardinality::test_metrics_endpoint_excludes_itself PASSED [ 72%]
+tests/test_monitoring.py::TestPSIProperties::test_identical_distribution_gives_zero PASSED [ 73%]
+tests/test_monitoring.py::TestPSIProperties::test_psi_is_never_negative PASSED [ 74%]
+tests/test_monitoring.py::TestPSIProperties::test_psi_grows_with_the_size_of_the_shift PASSED [ 75%]
+tests/test_monitoring.py::TestPSIProperties::test_psi_is_symmetric_in_the_two_distributions PASSED [ 77%]
+tests/test_monitoring.py::TestPSIProperties::test_empty_bucket_does_not_produce_infinity PASSED [ 78%]
+tests/test_monitoring.py::TestPSIProperties::test_empty_input_is_zero_not_an_error PASSED [ 79%]
+tests/test_monitoring.py::TestPSIProperties::test_values_outside_the_reference_range_land_in_the_end_buckets PASSED [ 81%]
+tests/test_monitoring.py::TestDriftStatus::test_the_conventional_bands PASSED [ 82%]
+tests/test_monitoring.py::TestMonitoringWindow::test_window_is_bounded PASSED [ 83%]
+tests/test_monitoring.py::TestMonitoringWindow::test_small_window_reports_insufficient_rather_than_zero PASSED [ 84%]
+tests/test_monitoring.py::TestMonitoringWindow::test_no_reference_means_no_drift_reported PASSED [ 86%]
+tests/test_monitoring.py::TestMonitoringWindow::test_drift_is_detected_when_the_window_shifts PASSED [ 87%]
+tests/test_monitoring.py::TestMonitoringWindow::test_selection_rate_uses_the_review_threshold PASSED [ 88%]
+tests/test_monitoring.py::TestMonitoringWindow::test_tiny_groups_are_not_reported PASSED [ 89%]
+tests/test_monitoring.py::TestMonitoringWindow::test_fairness_gap_needs_two_groups PASSED [ 91%]
+tests/test_monitoring.py::TestMonitoringWindow::test_window_is_thread_safe PASSED [ 92%]
+tests/test_monitoring.py::TestReference::test_reference_covers_the_monitored_features PASSED [ 93%]
+tests/test_monitoring.py::TestReference::test_bin_edges_are_increasing PASSED [ 94%]
+tests/test_monitoring.py::TestReference::test_outer_edges_are_open PASSED [ 96%]
+tests/test_monitoring.py::TestReference::test_expected_proportions_sum_to_one PASSED [ 97%]
+tests/test_monitoring.py::TestReference::test_bins_start_out_roughly_equally_populated PASSED [ 98%]
+tests/test_monitoring.py::TestReference::test_training_data_scores_near_zero_against_its_own_reference PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/test_api_monitoring.py::TestMonitoringEndpoint::test_window_grows_with_traffic
+  /Users/thanhhigk/Study/devops/Lab-04/ddm501-lab4-starter/.venv/lib/python3.11/site-packages/joblib/externals/loky/backend/context.py:136: UserWarning: Could not find the number of physical cores for the following reason:
+  invalid literal for int() with base 10: ''
+  Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+
+--------- coverage: platform darwin, python 3.11.15-final-0 ----------
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+app/__init__.py         1      0   100%
+app/config.py          13      0   100%
+app/explain.py         36      2    94%   67, 70
+app/main.py           132     24    82%   84-87, 94-101, 124, 211-216, 238-243, 261, 273-276, 283, 310-312
+app/metrics.py         20      0   100%
+app/middleware.py      24      0   100%
+app/model.py           69      7    90%   45-50, 77, 140-142
+app/monitoring.py      93      3    97%   130, 172-173
+app/schemas.py         60      2    97%   61, 68
+-------------------------------------------------
+TOTAL                 448     38    92%
+Coverage HTML written to dir htmlcov
+Coverage XML written to file coverage.xml
+
+Required test coverage of 85% reached. Total coverage: 91.52%
+======================== 79 passed, 1 warning in 45.17s ========================

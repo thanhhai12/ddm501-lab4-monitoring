@@ -1,0 +1,213 @@
+{
+  "profile": "normal",
+  "strength": 1.0,
+  "seed": 501,
+  "started_at": "2026-10-03T06:59:36.623998+00:00",
+  "checkpoints": [
+    {
+      "requests": 50,
+      "elapsed_seconds": 1791010785.386925,
+      "mean_score": 0.2480100000000001,
+      "decisions": {
+        "REVIEW": 9,
+        "APPROVE": 38,
+        "DECLINE": 3
+      },
+      "window_size": 50,
+      "min_window_size": 200,
+      "sufficient_data": false,
+      "feature_psi": {},
+      "drift_score": 0.0,
+      "drift_status": "stable",
+      "selection_rate": {},
+      "fairness_gap": 0.0
+    },
+    {
+      "requests": 100,
+      "elapsed_seconds": 1791010794.307464,
+      "mean_score": 0.2335240000000001,
+      "decisions": {
+        "REVIEW": 19,
+        "APPROVE": 77,
+        "DECLINE": 4
+      },
+      "window_size": 100,
+      "min_window_size": 200,
+      "sufficient_data": false,
+      "feature_psi": {},
+      "drift_score": 0.0,
+      "drift_status": "stable",
+      "selection_rate": {},
+      "fairness_gap": 0.0
+    },
+    {
+      "requests": 150,
+      "elapsed_seconds": 1791010803.23436,
+      "mean_score": 0.2236440000000001,
+      "decisions": {
+        "REVIEW": 24,
+        "APPROVE": 119,
+        "DECLINE": 7
+      },
+      "window_size": 150,
+      "min_window_size": 200,
+      "sufficient_data": false,
+      "feature_psi": {},
+      "drift_score": 0.0,
+      "drift_status": "stable",
+      "selection_rate": {},
+      "fairness_gap": 0.0
+    },
+    {
+      "requests": 200,
+      "elapsed_seconds": 1791010812.164255,
+      "mean_score": 0.22023650000000003,
+      "decisions": {
+        "REVIEW": 29,
+        "APPROVE": 162,
+        "DECLINE": 9
+      },
+      "window_size": 200,
+      "min_window_size": 200,
+      "sufficient_data": true,
+      "feature_psi": {
+        "LIMIT_BAL": 0.023186486356309457,
+        "AGE": 0.04183294504271705,
+        "PAY_0": 0.038998345292584016,
+        "utilisation_ratio": 0.053974609191631134,
+        "payment_ratio": 0.027156422160695207,
+        "max_delay": 0.04786911969614421
+      },
+      "drift_score": 0.053974609191631134,
+      "drift_status": "stable",
+      "selection_rate": {
+        "1.0": 0.2,
+        "2.0": 0.18518518518518517
+      },
+      "fairness_gap": 0.014814814814814836
+    },
+    {
+      "requests": 250,
+      "elapsed_seconds": 1791010821.06253,
+      "mean_score": 0.23246999999999998,
+      "decisions": {
+        "REVIEW": 34,
+        "APPROVE": 198,
+        "DECLINE": 18
+      },
+      "window_size": 250,
+      "min_window_size": 200,
+      "sufficient_data": true,
+      "feature_psi": {
+        "LIMIT_BAL": 0.023186205123203872,
+        "AGE": 0.03363516163557722,
+        "PAY_0": 0.024598602062000492,
+        "utilisation_ratio": 0.06000819582172217,
+        "payment_ratio": 0.020501703714915335,
+        "max_delay": 0.036845632913592184
+      },
+      "drift_score": 0.06000819582172217,
+      "drift_status": "stable",
+      "selection_rate": {
+        "1.0": 0.2159090909090909,
+        "2.0": 0.2037037037037037
+      },
+      "fairness_gap": 0.01220538720538722
+    },
+    {
+      "requests": 300,
+      "elapsed_seconds": 1791010829.998215,
+      "mean_score": 0.2349506666666667,
+      "decisions": {
+        "REVIEW": 41,
+        "APPROVE": 235,
+        "DECLINE": 24
+      },
+      "window_size": 300,
+      "min_window_size": 200,
+      "sufficient_data": true,
+      "feature_psi": {
+        "LIMIT_BAL": 0.025514891650138486,
+        "AGE": 0.031020186490667925,
+        "PAY_0": 0.010289892397507909,
+        "utilisation_ratio": 0.04636212102142338,
+        "payment_ratio": 0.0316161417500211,
+        "max_delay": 0.021183882109242342
+      },
+      "drift_score": 0.04636212102142338,
+      "drift_status": "stable",
+      "selection_rate": {
+        "1.0": 0.22641509433962265,
+        "2.0": 0.211340206185567
+      },
+      "fairness_gap": 0.015074888154055638
+    },
+    {
+      "requests": 350,
+      "elapsed_seconds": 1791010838.921203,
+      "mean_score": 0.24115542857142852,
+      "decisions": {
+        "REVIEW": 50,
+        "APPROVE": 269,
+        "DECLINE": 31
+      },
+      "window_size": 350,
+      "min_window_size": 200,
+      "sufficient_data": true,
+      "feature_psi": {
+        "LIMIT_BAL": 0.019388404059082986,
+        "AGE": 0.027715240379219797,
+        "PAY_0": 0.00959445453580878,
+        "utilisation_ratio": 0.03828975689225873,
+        "payment_ratio": 0.01874445493997533,
+        "max_delay": 0.008165285165181807
+      },
+      "drift_score": 0.03828975689225873,
+      "drift_status": "stable",
+      "selection_rate": {
+        "1.0": 0.2661290322580645,
+        "2.0": 0.21238938053097345
+      },
+      "fairness_gap": 0.05373965172709105
+    },
+    {
+      "requests": 400,
+      "elapsed_seconds": 1791010847.882443,
+      "mean_score": 0.23552475000000006,
+      "decisions": {
+        "REVIEW": 57,
+        "APPROVE": 311,
+        "DECLINE": 32
+      },
+      "window_size": 400,
+      "min_window_size": 200,
+      "sufficient_data": true,
+      "feature_psi": {
+        "LIMIT_BAL": 0.015204759253802734,
+        "AGE": 0.0301326721486143,
+        "PAY_0": 0.0059094906450449305,
+        "utilisation_ratio": 0.028813018718608936,
+        "payment_ratio": 0.013118220869583532,
+        "max_delay": 0.0035574038132665095
+      },
+      "drift_score": 0.0301326721486143,
+      "drift_status": "stable",
+      "selection_rate": {
+        "1.0": 0.23448275862068965,
+        "2.0": 0.21568627450980393
+      },
+      "fairness_gap": 0.01879648411088572
+    }
+  ],
+  "statuses": {
+    "200": 400
+  },
+  "mean_score": 0.23552475000000006,
+  "decisions": {
+    "REVIEW": 57,
+    "APPROVE": 311,
+    "DECLINE": 32
+  },
+  "p95_ms": 27.37475000321865,
+  "finished_at": "2026-10-03T07:00:48.037687+00:00"
+}
