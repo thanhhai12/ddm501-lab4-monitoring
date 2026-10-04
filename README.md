@@ -52,7 +52,9 @@ docker compose config --quiet
 CI checks rule syntax/behavior, pytest coverage, the Compose configuration, and
 an actual running stack with metrics reaching Prometheus. Evidence, screenshots
 and traffic measurements live in [docs/evidence](docs/evidence).
-The written analysis is [docs/REPORT.md](docs/REPORT.md) and its PDF companion.
+The written analysis is [REPORT.pdf](docs/REPORT.pdf), with [Markdown source](docs/REPORT.md).
+[Submission requirements](docs/SUBMISSION_CHECKLIST.md) map each task to evidence.
+[Passing CI screenshot](docs/evidence/github-ci-success.jpg) records the actual GitHub run.
 
 ## Reproduce the traffic experiment
 
